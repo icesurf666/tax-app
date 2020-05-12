@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.9.12",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -10,8 +12,20 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
+    "bem-cn": "^3.0.1",
+    "final-form": "^4.19.1",
+    "final-form-material-ui": "^0.3.0",
+    "lodash": "^4.17.15",
+    "material-table": "^1.57.2",
+    "mobx": "^5.15.4",
+    "mobx-persist": "^0.4.1",
+    "mobx-react": "^6.2.2",
+    "node-sass": "^4.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-final-form": "^6.4.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2"
   },
@@ -35,5 +49,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.150",
+    "@types/uuid": "^7.0.3"
   }
 }
