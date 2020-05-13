@@ -13,6 +13,7 @@ import block from "bem-cn";
 import './styles.sass'
 import useInfoStore from "hooks/useInfo";
 import { validate } from "./validator";
+import SelectContact from "components/Inputs/ContactField";
 
 const cls = block('info-btn')
 
@@ -51,6 +52,7 @@ const InfoModal: React.FC<IProps> = ({
         render={({ handleSubmit }) => (
           <>
             <TextField name="name" type="string" label="Наименование" />
+            <SelectContact name='contactId' />
             <SelectTypeOfAddress name="typeOfAddresId" />
             <TextField name="dateOfStart" type="date" />
             <TextField name="dateOfEnd" type="date" />

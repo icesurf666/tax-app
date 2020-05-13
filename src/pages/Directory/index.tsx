@@ -6,7 +6,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import EmojiTransportationIcon from '@material-ui/icons/EmojiTransportation';
 import DomainIcon from '@material-ui/icons/Domain';
 import LocalConvenienceStoreIcon from '@material-ui/icons/LocalConvenienceStore';
-
+import PhoneIcon from '@material-ui/icons/Phone';
 import SubHeader from './components/SubHeader';
 import ListItem from './components/ListItem';
 import CityTable from 'components/CityTable';
@@ -17,6 +17,7 @@ import LocalityTable from 'components/LocalityTable';
 import AreaTable from 'components/AreaTable';
 import StreetTable from 'components/StreetTable';
 import TypeOfAddressTable from 'components/TypeOfAddressTable';
+import ContactTable from 'components/ContactTable';
 
 const cls = block('directory-wrapper')
 
@@ -40,6 +41,7 @@ const items = [
   {title: 'Район', icon: <DomainIcon />, name: 'area'},
   {title: 'Улица', icon: <EmojiTransportationIcon />, name: 'street'},
   {title: 'Вид адреса', icon: <LocalConvenienceStoreIcon />, name: 'typeofaddress'},
+  {title: 'Контакты', icon: <PhoneIcon />, name: 'contact'},
 ]
 
 export default function NestedList() {
@@ -67,6 +69,7 @@ export default function NestedList() {
     { selected === 'area' && <AreaTable /> }
     { selected === 'street' && <StreetTable /> }
     { selected === 'typeofaddress' && <TypeOfAddressTable />}
+    { selected === 'contact' && <ContactTable />}
     </div>
   );
 }

@@ -55,4 +55,12 @@ declare interface IInfo {
   streetId: string
   numberBuild: number
   kv: number
+  contactId: string
+}
+
+declare interface IContact {
+  id: string
+  codeCity: number
+  phoneNumber: number
+  fax: number
 }

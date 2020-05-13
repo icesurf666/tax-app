@@ -7,6 +7,7 @@ import TypeOfAddressStore from './typeOfAddressStore'
 import AreaStore from './areaStore'
 import LocalityStore from './localityStore'
 import InfoStore from './infoStore'
+import ContactStore from './contactStore'
 
 const hydrate = create({
   storage: localStorage,
@@ -22,6 +23,7 @@ class RootStore {
   public typeOfAddress: TypeOfAddressStore
   public area: AreaStore
   public info: InfoStore
+  public contact: ContactStore
 
   constructor() {
     this.ul = new UlStore()
@@ -32,7 +34,7 @@ class RootStore {
     this.typeOfAddress = new TypeOfAddressStore()
     this.area = new AreaStore()
     this.info = new InfoStore()
-
+    this.contact = new ContactStore()
 
     Promise.all([
       hydrate('Ul', this.ul),
@@ -42,7 +44,8 @@ class RootStore {
       hydrate('street', this.street),
       hydrate('typeOfAddress', this.typeOfAddress),
       hydrate('area', this.area),
-      hydrate('info', this.info)
+      hydrate('info', this.info),
+      hydrate('contact', this.contact),
     ])
   }
 
